@@ -2,3 +2,4 @@
 *.log
 playwright-report/
 test-results/
+.claude/

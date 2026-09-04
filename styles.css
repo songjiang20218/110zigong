@@ -4,8 +4,8 @@
   --paper: #f2f0e9;
   --paper-warm: #e8e4d9;
   --white: #fffefa;
-  --accent: #6f8fff;
-  --accent-deep: #4563ce;
+  --accent: #ff8a3d;
+  --accent-deep: #a94a12;
   --line: rgba(23, 27, 24, 0.18);
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
   --display: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -243,7 +243,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background: var(--accent);
 }
 .craft-visual::before {
-  content: "XHYC";
+  content: "ZHIQI";
   position: absolute;
   top: 3%;
   left: -2%;
@@ -298,6 +298,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .contact-mail span { transition: transform .25s ease; }
 .contact-mail:hover span { transform: translate(4px, -4px); }
 .contact-location p { margin: 0; font-size: .85rem; line-height: 1.7; }
+.company-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 2rem 3rem;
+  margin: clamp(3rem, 6vw, 5rem) 0 0;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,.35);
+}
+.company-facts dt { margin-bottom: .6rem; font-size: .58rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; opacity: .72; }
+.company-facts dd { margin: 0; font-size: .8rem; line-height: 1.75; }
 
 .site-footer { padding: 2.3rem var(--gutter); color: rgba(255,255,255,.66); background: var(--ink); }
 .footer-brand { display: flex; align-items: center; gap: .8rem; color: var(--white); font-family: var(--display); font-size: .88rem; }
